@@ -481,13 +481,13 @@ private extension PopupController {
 // MARK: UIScrollViewDelegate methods
 extension PopupController: UIScrollViewDelegate {
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let delta: CGFloat = defaultContentOffset.y - scrollView.contentOffset.y
-        if delta > 20 && isShowingKeyboard {
-            popupView.endEditing(true)
-            return
-        }
-    }
+//    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let delta: CGFloat = defaultContentOffset.y - scrollView.contentOffset.y
+//        if delta > 20 && isShowingKeyboard {
+//            popupView.endEditing(true)
+//            return
+//        }
+//    }
     
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let delta: CGFloat = defaultContentOffset.y - scrollView.contentOffset.y
