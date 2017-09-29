@@ -187,6 +187,9 @@ private extension PopupController {
         view.frame = UIScreen.main.bounds
         
         baseScrollView.frame = view.frame
+        if #available(iOS 11.0, *) {
+            baseScrollView.contentInsetAdjustmentBehavior = .never
+        }
         view.addSubview(baseScrollView)
         
         popupView.layer.cornerRadius = 2
